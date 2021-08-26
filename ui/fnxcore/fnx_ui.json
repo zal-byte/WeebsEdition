@@ -1,0 +1,19 @@
+{
+    "namespace": "fnx",
+
+      "play_icon": {
+      "type": "image",
+      "texture": "textures/fnxcore/start/play",
+      "layer": 3,
+      "size": [ 16 , 16 ],
+      "anchor_from": "left_middle",
+      "anchor_to": "left_middle"
+    },
+
+      "exit_icon": {
+      "type": "image",
+      "texture": "textures/fnxcore/start/exit",
+      "layer": 3,
+      "size": [ 16, 16 ]
+    }
+  }

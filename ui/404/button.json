@@ -1,0 +1,111 @@
+{
+    "namespace": "button",
+
+ /* 
+    # Created By Farhan
+    # Facebook : FX(farhan) 
+    # Instagram : @fx719
+    Custom Code Di Buat Oleh Farhan:D
+ */
+
+   "button_panel@common_buttons.new_ui_binding_button_label": {
+    "$anchor|default": "left",
+    "offset": [ 0 , -2 ]
+  },
+
+  "light_text_button@common_buttons.light_text_button": {
+    "$default_button_texture|default": "textures/ui-x/button/405/button_borderless_light_fnx",
+    "$hover_button_texture|default": "textures/ui-x/button/405/button_borderless_light_hover_fnx",
+    "$pressed_button_texture|default": "textures/ui-x/button/405/button_borderless_light_fnx",
+    "$locked_button_texture|default": "textures/ui-x/button/405/button_borderless_light_fnx",
+    "$button_type_panel": "button.button_panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "$border_visible": true,
+    "$font_type": "MinecraftTen",
+    "$default_text_color|default": [ 1.00, 1.00, 1.00 ],
+    "$hover_text_color|default": [ 0.00, 0.62, 1.00 ]
+  },
+ 
+    "fxbutton1@button.light_text_button": {
+    "$button_offset|default": [ 0, 0 ],
+    "size": [ "100%", "100% - 3px" ]
+  },
+
+  "changelog_button@button.fxbutton1": {
+   "$default_text_color|default": [ 1.0, 1.0, 1.0 ],
+   "$hover_text_color|default": [ 1.0, 1.0, 1.0 ],
+   "$default_button_texture|default": "textures/ui-x/button/404/button_borderless_light_fnx",
+   "$hover_button_texture|default": "textures/ui-x/button/404/button_borderless_light_hover_fnx",
+   "$pressed_button_texture|default": "textures/ui-x/button/404/button_borderless_light_fnx",
+   "$locked_button_texture|default": "textures/ui-x/button/404/button_borderless_light_fnx",
+   "$button_text": "UI v1.5.0",
+   "$border_visible": false,
+   "$pressed_button_name": "$play_button_target"
+  },
+
+  "play_button@button.fxbutton1": {
+   "$default_text_color|default": [ 0.00, 1.00, 0.35 ],
+   "$hover_text_color|default": [ 0.0, 0.0, 0.0 ],
+   "$default_button_texture|default": "textures/ui-x/button/406/button_borderless_light_fnx",
+   "$hover_button_texture|default": "textures/ui-x/button/406/button_borderless_lighthover_fnx",
+   "$pressed_button_texture|default": "textures/ui-x/button/406/button_borderless_light_fnx",
+   "$locked_button_texture|default": "textures/ui-x/button/406/button_borderless_light_fnx",
+   "$button_text": "menu.play",
+   "$border_visible": true,
+   "$pressed_button_name": "$play_button_target"
+  },
+
+  "store_button@button.fxbutton1": {
+    "$button_text": "menu.store",
+   "$pressed_button_name": "button.menu_store"
+  },
+
+  "achievements_button@button.fxbutton1": {
+   "$button_text": "menu.achievements",
+   "$pressed_button_name": "button.menu_achievements"
+  },
+
+  "settings_button@button.fxbutton1": {
+   "$button_text": "menu.settings",
+   "$pressed_button_name": "button.menu_settings"
+  },
+
+  "profile_button@button.fxbutton1": {
+   "$button_text": "profileScreen.header",
+   "$pressed_button_name": "button.to_profile_screen"
+  },
+
+  /// G L Y P H B U T T O N //
+
+
+  "icon": { "type": "image", "size": [ 18, 18], "color": [ 1.0 , 1.0, 1.0]},
+  "settings_icon@button.icon": { "texture": "textures/ui-x/icon/settings_icon", "size": [ 16 , 16 ]},
+  "profile_icon@button.icon": { "texture": "textures/ui-x/icon/profile_icon" },
+  "exit_icon@button.icon": { "texture": "textures/ui-x/icon/exit_icon" },
+
+
+  "fxbutton2@common_buttons.light_glyph_button": {
+    "$default_button_texture|default": "",
+    "$hover_button_texture|default": "",
+    "$pressed_button_texture|default": "",
+    "$locked_button_texture|default": "",
+    "size": [ 25, 25 ],
+    "$button_content_offset": [ 0, 0 ]
+  },
+
+  "settings_button_icon@button.fxbutton2": {
+    "$pressed_button_name": "button.menu_settings",
+    "$button_content": "button.settings_icon"
+  },
+
+  "profile_button_icon@button.fxbutton2": {
+    "$pressed_button_name": "button.to_profile_screen",
+    "$button_content": "button.profile_icon"
+  },
+
+  "exit_button_icon@button.fxbutton2": {
+    "$pressed_button_name": "button.menu_exit",
+    "$button_content": "button.exit_icon"
+  }
+}

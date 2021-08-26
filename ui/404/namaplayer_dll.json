@@ -1,0 +1,112 @@
+{
+    "namespace": "loli",
+
+    "button_panel": {
+    "type": "panel",
+    "layer": 2,
+    "size": [ "fill" , "100%" ]
+    },
+
+    "panel_nama_player": {
+    "type": "panel",
+    "layer": 2,
+    "size": [ "35%" , "100%" ],
+    "max_size": [ "40%" , "100%" ]
+    },
+
+    "panel_nama_pict": {
+    "type": "panel",
+    "layer": 2,
+    "size": [ "30px" , "100%" ]
+    },
+
+    "profile_label": {
+    "type": "label",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "70%", 10 ],
+    "max_size": [ "80%" , "100%" ],
+    "color": [ 1.0 , 1.0, 1.0 ]
+   // "font_type": "MinecraftTen"
+  },
+
+  "profn@loli.profile_label": {
+    "layer": 5,
+    "text": "Name",
+  	"font_size": "small"
+    },
+   
+    "playername@loli.profile_label": {
+    "layer": 5,
+    "text": "#playername",
+  	"font_size": "",
+    "bindings": [
+        {
+         "binding_name": "#playername"
+        }
+      ]
+    },
+
+    "gamerpic": {
+    "type": "image",
+    "size": [ 22 , 22 ],
+    "bindings": [
+          {
+            "binding_name": "#gamerpic_texture_path",
+            "binding_name_override": "#texture"
+          },
+       {
+          "binding_name": "#gamerpic_texture_location_type",
+          "binding_name_override": "#texture_file_system"
+        }
+      ]
+    },
+
+    "player_name_test": {
+    "type": "panel",
+    "size": [ "100%" , 30 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+         {
+           "profile_name@loli.profn": {
+           "offset": [ 2 , 6 ]
+          }
+       },
+          {
+            "playername@loli.playername": {
+            "offset": [ 2 , 13 ]
+          }
+        }
+      ]
+    },
+
+    "panel": {
+      "type": "panel",
+    //  "texture": "textures/ui-x/dialog/bg",
+      "size": [ 150 , "100%" ]
+    },
+
+    "panel_nama_player@loli.panel": {
+      "size": [ "100%" , "100%" ],
+      "controls": [
+        {
+          "stack_panel": {
+          "type": "stack_panel",
+          "size": [ "100%" , "100%" ],
+          "orientation": "horizontal",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left", 
+          "controls": [
+              {
+                "panel_nama_pict@loli.panel_nama_pict": { "controls": [ { "gamerpic@loli.gamerpic": {}}]}
+              },
+              {
+                "button_panel@loli.button_panel": { "controls": [ { "player_name_test@loli.player_name_test": {}}]}
+              }
+            ]
+          }
+        }
+      ]
+    }
+ }

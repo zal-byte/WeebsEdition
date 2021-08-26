@@ -1,0 +1,211 @@
+﻿{
+  "namespace": "start",
+
+  
+  //---------------------------------------------------------------------------
+  // Online Buttons Panel (and the lang button)
+  //---------------------------------------------------------------------------
+
+  "edu_feedback_button@common_buttons.light_content_button": {
+    "size": [ 24, 24 ],
+    "$button_content": "start.feedback_icon",
+    "$pressed_button_name": "button.edu_feedback"
+  },
+
+  "release_feedback_button@common_buttons.hyperlink_content_button": {
+    "size": [ 24, 24 ],
+    "property_bag": {
+      "#hyperlink": "https://aka.ms/minecraftfb"
+    },
+    "$button_content": "start.feedback_icon"
+  },
+
+  "pre_release_feedback_button@start.release_feedback_button": {
+    "property_bag": {
+      "#hyperlink": "https://aka.ms/minecraftfbbeta"
+    }
+  },
+
+  "new_offers_icon@common_store.new_offer_icon": {
+    "layer": 11, // This is the lowest layer where the button border won't show through this icon while being pressed
+    "anchor_from": "top_right",
+    "anchor_to": "top_right"
+  },
+
+  "update_prompt_icon": {
+    "type": "image",
+    "texture": "textures/ui/update",
+    "layer": 12, // This is the lowest layer where the button border won't show through this icon while being pressed
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 11, 21 ]
+  },
+
+  "marketplace_error_icon@common_store.marketplace_error_icon": {
+    "layer": 12,
+    "anchor_from": "top_left",
+    "anchor_to": "top_left"
+  },
+
+  "sale_ribbon_icon": {
+    "type": "image",
+    "texture": "textures/ui/saleribbon",
+    "layer": 12 // This is the lowest layer where the button border won't show through this icon while being pressed
+  },
+
+  
+
+  "development_version": {
+    "type": "label",
+    "color": "$main_header_text_color",
+    "layer": 2,
+    "text": "#development_version",
+    "size": [ "default", 10 ],
+    "max_size": [ "100%", "100%" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "bindings": [
+      {
+        "binding_name": "#development_version"
+      }
+    ]
+  },
+
+
+  "text_panel": {
+    "type": "panel",
+    "size": [ "100%-2px", 10 ],
+    "offset": [ 0, 0 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "development_version@start.development_version": {
+          "ignored": "$is_publish"
+        }
+      }
+    ]
+  },
+  
+  "skin_viewer_panel": {
+    "type": "input_panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "size": [ "100%", "100% - 24px" ],
+    "offset": [ 0, -16 ],
+    "gesture_tracking_button": "button.turn_doll",
+    "tts_ignore_count": true,
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.turn_doll",
+        "mapping_type": "pressed",
+        "button_up_right_of_first_refusal": true
+      }
+    ],
+    "controls": [
+      {
+        "paper_doll_panel": {
+          "type": "panel",
+          "size": [ "100%", "100% - 10px" ],
+
+          "controls": [
+            {
+              "paper_doll": {
+                "type": "custom",
+                "renderer": "paper_doll_renderer",
+                "camera_tilt_degrees": 0,
+                "starting_rotation": 20,
+                "layer": 2,
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "rotation": "gesture_x",
+                "size": [ "100%", "100%" ],
+                "offset": [ 0, -30 ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.screen_exit_size_animation_push",
+                  "@common.screen_exit_size_animation_pop",
+                  "@common.screen_entrance_size_animation_push",
+                  "@common.screen_entrance_size_animation_pop"
+                ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_delta_source",
+                    "target_property_name": "#gesture_delta_source"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "viewer_panel",
+                    "source_property_name": "#gesture_mouse_delta_x",
+                    "target_property_name": "#gesture_mouse_delta_x"
+                  },
+                  {
+                    "binding_name": "#is_appearance_visible",
+                    "binding_name_override": "#visible",
+                    "binding_condition": "always"
+                  }
+                ]
+              }
+            },
+            {
+              "appearacne_loading_panel@common_store.progress_loading": {
+                "$hide_failure_text": true,
+                "$hide_progress_loading_outline": true,
+                "$source_control_name": "paper_doll",
+                "$source_property_name": "(not #visible)"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  
+  "start_screen_content": {
+    "type": "panel",
+    "$achievements_ignored|default": false,
+    "$feedback_ignored|default": false,
+    "$store_ignored|default": false,
+    "variables": [
+      {
+        "requires": "$education_edition",
+        "$achievements_ignored": true,
+        "$store_ignored|default": true
+      },
+      {
+        "requires": "$gear_vr",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "$fire_tv",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "$nx_os",
+        "$feedback_ignored": true
+      },
+      {
+        "requires": "(not $supports_xbl_achievements)",
+        "$achievements_ignored": true,
+        "$feedback_ignored": true
+      }
+    ],
+    "controls": [
+    {
+	    "title_panel@fnxcore.title_panel": {}
+    },
+    {
+      "button_panel@fnxcore.button_panel":{}
+    },
+    {
+      "text_panel@start.text_panel": {}
+    },
+	  {
+	    "dark_panel@start.dark_panel": {}
+	  }
+    ]
+  }
+}
