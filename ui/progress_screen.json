@@ -1209,7 +1209,7 @@
         "title": {
           "type": "image",
           "texture": "textures/ui/title",
-          "size": [ "100%" , 80 ],
+          "size": [ "100%" , 68 ],
           "anchor_from": "middle",
           "anchor_to": "middle",
           "offset": [ 0 , 0 ]
