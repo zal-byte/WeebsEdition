@@ -4,7 +4,7 @@
         "description": "A l p h a t e s t \nMy Facebook : FX(FarhanX)",
         "name": "§dUwU§fCraf 1.5",
         "uuid": "315098c6-0632-4b13-b5f7-9281dc611ec6",
-        "version": [1, 0, 0],
+        "version": [1, 7, 5],
         "min_engine_version": [ 1, 16, 5 ]
     },
     "modules": [
@@ -12,7 +12,7 @@
             "description": "A l p h a t e s t \nMy Facebook : FX(FarhanX)",
             "type": "resources",
             "uuid": "4b629694-5665-42b0-bb17-63ab92061592",
-            "version": [1, 0, 0]
+            "version": [1, 7, 5]
         }
     ]
 }
