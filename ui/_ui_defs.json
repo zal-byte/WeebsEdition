@@ -6,19 +6,17 @@
 
     // C u $ T o M J s O ? 1.0
 
-    "ui/fnxcore/fnx_ui.json",
-    "ui/fnxcore/fnx_ui_start.json",
-    "ui/fnxcore/neko_button.json",
+    "ui/han/neko_icon.json",
+    "ui/han/neko_main_ui.json",
+    "ui/han/neko_button.json",
     
-    // C u $ T o M J s O ? 2.0
+    // C u $ T o M J s O n 2.0
 
 
-    "ui/404/animation.json",
-    "ui/404/button.json",
-    "ui/404/button_test.json",
-    "ui/404/namaplayer_dll.json",
-    "ui/404/ui_settings_common.json",
-    "ui/404/ui_settings_section.json",
+    "ui/tokumiyuki/animation.json",
+    "ui/tokumiyuki/namaplayer_dll.json",
+    "ui/tokumiyuki/ui_settings_common.json",
+    "ui/tokumiyuki/ui_settings_section.json",
 
 
     "ui/account_banned_screen.json",
