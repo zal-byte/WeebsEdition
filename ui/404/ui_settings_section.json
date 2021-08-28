@@ -26,9 +26,9 @@
     "$glyph_texture": "textures/ui-x/icon/settings_grafis",
     "$glyph_color_texture": "textures/ui-x/icon/settings_grafis",
     "$glyph_size": [ 23, 23 ],
-    "$button_text": "Graphics",
+    "$button_text": "neko.graphics",
     "$toggle_property_bag": {
-      "#panel_title": "Graphics"
+      "#panel_title": "neko.title_graphics"
     }
   },
 
@@ -546,9 +546,9 @@
     "$glyph_texture": "textures/ui-x/icon/settings_about",
     "$glyph_color_texture": "textures/ui-x/icon/settings_about",
     "$glyph_size": [ 23, 23 ],
-    "$button_text": "About",
+    "$button_text": "neko.about",
     "$toggle_property_bag": {
-      "#panel_title": "About"
+      "#panel_title": "neko.title_about"
     }
   },
 
@@ -576,7 +576,7 @@
       { "spacer": { "type": "panel", "size": [ 10 , 10 ]}},
 
       // VERSI UI
-      { "version@custom_settings_section.fxn_label": { "text": "NekoCraft Resourcepack\nCreated By Farhan(Han)" ,"shadow": false }},
+      { "version@custom_settings_section.fxn_label": { "text": "neko.desc" ,"shadow": false }},
       { "spacer": { "type": "panel", "size": [ 3 , 3 ] }},
       { "version@custom_settings_section.fxn_label": { "font_size":"", "text": "Ui Version : 1.6.1 Alpha" , "shadow": false }},
       { "build@custom_settings_section.fxn_label": { "font_size":"", "text": "Build : 13" , "shadow": false }},
