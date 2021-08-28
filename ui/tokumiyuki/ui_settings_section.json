@@ -16,9 +16,9 @@
     "$glyph_texture": "textures/ui-x/icon/settings_grafis",
     "$glyph_color_texture": "textures/ui-x/icon/settings_grafis",
     "$glyph_size": [ 23, 23 ],
-    "$button_text": "Graphics",
+    "$button_text": "neko.graphics",
     "$toggle_property_bag": {
-      "#panel_title": "Graphics"
+      "#panel_title": "neko.title_graphics"
     }
   },
 
@@ -246,9 +246,9 @@
     "$glyph_texture": "textures/ui-x/icon-settings/game_settings",
     "$glyph_color_texture": "textures/ui-x/icon-settings/game_settings",
     "$glyph_size": [ 16, 16 ],
-    "$button_text": "Gameplay",
+    "$button_text": "neko.gameplay",
     "$toggle_property_bag": {
-      "#panel_title": "Gameplay"
+      "#panel_title": "neko.title_gameplay"
     }
   },
 
@@ -546,9 +546,9 @@
     "$glyph_texture": "textures/ui-x/icon/settings_about",
     "$glyph_color_texture": "textures/ui-x/icon/settings_about",
     "$glyph_size": [ 23, 23 ],
-    "$button_text": "About",
+    "$button_text": "neko.about",
     "$toggle_property_bag": {
-      "#panel_title": "About"
+      "#panel_title": "neko.title_about"
     }
   },
 
