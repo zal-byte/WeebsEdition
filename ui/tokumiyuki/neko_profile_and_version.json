@@ -168,6 +168,7 @@
             { "copyright@loli.copyright": {}},
             { "space": {"type": "panel", "size": [ 5 , 5 ]}},
             { "version@loli.version": {}},
+            { "space": {"type": "panel", "size": [ 3 , 3 ]}},
             { "weebs@loli.weebs": {}}
             ]
           }
