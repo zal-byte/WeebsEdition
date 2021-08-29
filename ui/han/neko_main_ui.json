@@ -90,7 +90,7 @@
   
   "button_dan_icon": {
     "type": "panel",
-    "size": [ 150 , "100%" ], 
+    "size": [ 130 , "100%" ], 
     "offset": [ 7 , 0 ],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
