@@ -1,5 +1,12 @@
 ## Note : 
 ## Ini Bahasa : English (United States)
 
-neko.graphics.keyboard=Graphics
+# SETTINGS
+neko.graphics=Graphics
 neko.title_graphics=Graphics
+
+neko.gameplay=Gameplay
+neko.title_gameplay=Gameplay Settings
+
+neko.about=About
+neko.title_about=About
