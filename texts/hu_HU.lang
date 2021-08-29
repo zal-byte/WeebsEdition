@@ -2,11 +2,11 @@
 ## Bahasa :
 
 # SETTINGS
-neko.graphics=Graphics
-neko.title_graphics=Graphics
+neko.graphics=Grafika
+neko.title_graphics=Grafika
 
-neko.gameplay=Gameplay
-neko.title_gameplay=Gameplay Settings
+neko.gameplay=Játékmenet
+neko.title_gameplay=Játékmenet beállításai
 
-neko.about=About
-neko.title_about=About
+neko.about=Ról ről
+neko.title_about=Ról ről

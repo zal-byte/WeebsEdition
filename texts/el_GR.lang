@@ -2,11 +2,11 @@
 ## Bahasa :
 
 # SETTINGS
-neko.graphics=Graphics
-neko.title_graphics=Graphics
+neko.graphics=Γραφικά
+neko.title_graphics=Γραφικά
 
-neko.gameplay=Gameplay
-neko.title_gameplay=Gameplay Settings
+neko.gameplay=παιχνιδιού
+neko.title_gameplay=Ρυθμίσεις παιχνιδιού
 
-neko.about=About
-neko.title_about=About
+neko.about=Σχετικά με
+neko.title_about=Σχετικά με
