@@ -76,7 +76,7 @@
 
   "$text_box_text_color": [ 1.0, 1.0, 1.0 ],
   "$text_box_locked_text_color": [ 1.0, 1.0, 1.0 ],
-  "$place_holder_text_color": [ 0.5, 0.5, 0.5 ],
+  "$place_holder_text_color": [ 0.0, 0.0, 0.0 ],
 
   "$title_command_text_color": [ 1.0, 1.0, 1.0 ],
   "$subtitle_command_text_color": [ 1.0, 1.0, 1.0 ],
