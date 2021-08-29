@@ -2,11 +2,11 @@
 ## Bahasa :
 
 # SETTINGS
-neko.graphics=Graphics
-neko.title_graphics=Graphics
+neko.graphics=Grafica
+neko.title_graphics=Grafica
 
-neko.gameplay=Gameplay
-neko.title_gameplay=Gameplay Settings
+neko.gameplay=Gioco
+neko.title_gameplay=Impostazioni di gioco
 
-neko.about=About
-neko.title_about=About
+neko.about=Di
+neko.title_about=Di

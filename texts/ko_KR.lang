@@ -2,11 +2,11 @@
 ## Bahasa :
 
 # SETTINGS
-neko.graphics=Graphics
-neko.title_graphics=Graphics
+neko.graphics=제도법
+neko.title_graphics=제도법
 
-neko.gameplay=Gameplay
-neko.title_gameplay=Gameplay Settings
+neko.gameplay=게임 플레이
+neko.title_gameplay=게임 플레이 설정
 
-neko.about=About
-neko.title_about=About
+neko.about=에 대한
+neko.title_about=에 대한
